@@ -1,6 +1,5 @@
 package tudelft.ghappy;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -28,7 +27,7 @@ public class GHappyTest {
     @Test
     public void testNoGs() {
         GHappy g = new GHappy();
-        assertTrue(g.gHappy("abcdef"));      // No hay g, debe retornar true
+        assertTrue(g.gHappy("abcdef"));      // No hay g
     }
 
     @Test

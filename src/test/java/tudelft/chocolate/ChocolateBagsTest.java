@@ -50,6 +50,4 @@ public class ChocolateBagsTest {
         int result = cb.calculate(4, 2, 3);
         Assertions.assertEquals(3, result);
     }
-
-
 }
