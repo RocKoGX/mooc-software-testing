@@ -17,4 +17,20 @@ public class CountLettersTest {
         Assertions.assertEquals(1, words);
     }
 
+    @Test
+    public void endsWithRBeforeSeparator() {
+        int result = new CountLetters().count("perr|gatito");
+        Assertions.assertEquals(1, result);
+    }
+
+    @Test
+    public void endsWithOtherLetterBeforeSeparator() {
+        int result = new CountLetters().count("cat|dog");
+        Assertions.assertEquals(0, result);
+    }
+    @Test
+    public void wordEndsWithR_NoSeparator_ShouldBeCounted() {
+        int result = new CountLetters().count("perr");
+        Assertions.assertEquals(1, result);
+    }
 }
